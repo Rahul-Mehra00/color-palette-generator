@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Color Palette</title>
+  <link rel="icon" href="/images/fav-icon.png" type="image/x-icon">
+  <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left-column">
+
+      <input type="file" id="user-image-input" accept="image/jpeg, image/png">
+      <img class="upload-icon" id="upload-user-image" src="./images/cloud-upload.png">
+      <div class="left-header" id="header"></div>
+      <div id="uploaded-image-container" class="image-container">
+        <img id="user-image" class="styled-image">
+        <button id="do-user-image" class="do-it-button" style="display: none;">See color palette</button>
+      </div>
+      <div class="image-container">
+        <img src="images/scene.jpg" id="coke" class="styled-image">
+        <button id="do-coke" class="do-it-button"></button>
+      </div>
+      <div class="button-container">
+        <span class="clickable-text" id="download-button">SVG⭳</span>
+        <span class="clickable-text" id="download-ase-button">ASE⭳</span>
+        <span class="clickable-text" id="take-screenshot">Screenshot⭳</span>
+        <span class="clickable-text" id="google-palette-button">Google Palette🔗</span>
+        <span class="clickable-text" id="generate-coolors-button">Coolors Palette🔗</span>
+
+      </div>
+      <div class="last-sec">
+        <div class="second-sub">
+          <div class="need-sample">No image?</div>
+          <div class="need-sample-2">Try these :</div>
+        </div>
+        <div class="sample-image" id="sample-image">
+          <img class="sample-img" id="imageId-1" src="./images/images.jpg">
+          <img class="sample-img" id="imageId-2" src="./images/samplee.webp">
+          <img class="sample-img" id="imageId-3" src="./images/download.jpg">
+          <img class="sample-img" id="imageId-4" src="./images/room.jpg">
+        </div>
+      </div>
+      <div class="footer-icon mobile"> Made with ❤️ by <a class="bold-name"
+          href="https://www.linkedin.com/in/himani-mehra/" target="_blank"><b><u><span style="color: white;">Himani
+                Mehra</span></u></b></a>
+      </div>
+    </div>
+    <div class="right-column">
+      <div class="heading">Where Painted Pixels Meet : A Canvas of Color Unfurled</div>
+      <div class="color-palette" id="output"></div>
+      <div id="captured-image-palette" class="color-palette"></div>
+    </div>
+  </div>
+</body>
+<script src="dist/colorcube.min.js"></script>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/core-js/0.9.18/core.min.js"></script>
+<script src="dist/colorcube.min.js"></script>
+<script src="index.js"></script>
+
+</html>
